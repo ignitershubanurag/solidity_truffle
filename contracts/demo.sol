@@ -6,4 +6,11 @@ contract demo {
     constructor(uint _num){
         num1 = _num;
     }
+    function updateNum(uint _num) public {
+        num1 = _num;
+    }
+
+    function getNum() public view returns(uint){
+        return num1;
+    }
 }
